@@ -1,0 +1,15 @@
+name: Github Actions Demo
+
+on: [push]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: ricosmall/github-actions@master
+    - uses: node12
+    - name: Test Node Build
+      run: console.log('hello world')
